@@ -20,3 +20,15 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=300"
+
+# site/ doubles as the repo folder, so a few files in it are internal notes
+# rather than web pages. Netlify uploads the whole directory, so hide them.
+[[redirects]]
+  from = "/README.md"
+  to = "/index.html"
+  status = 404
+
+[[redirects]]
+  from = "/tools/*"
+  to = "/index.html"
+  status = 404
