@@ -1,0 +1,16 @@
+# Scratch: contact sheets, the raw Instagram scrape, and photos belonging to
+# other accounts that were filtered out of the site. Deliberately not tracked —
+# the third-party images should not be republished, and the scraped URLs are
+# signed and expire within hours.
+_working/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
