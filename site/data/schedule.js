@@ -1,8 +1,8 @@
 /* ---------------------------------------------------------------------------
    SCHEDULE + PRICING
    Transcribed from the gym's own Instagram posts dated 12 Aug 2026:
-     schedule — instagram.com/p/Db9EaQpyvBZ/  ("New schedule starting 8/17")
-     pricing  — instagram.com/p/Db88SFNynDM/  ("Gym pricing")
+     schedule: instagram.com/p/Db9EaQpyvBZ/  ("New schedule starting 8/17")
+     pricing:  instagram.com/p/Db88SFNynDM/  ("Gym pricing")
    Re-verify against the gym before this site goes public.
 --------------------------------------------------------------------------- */
 

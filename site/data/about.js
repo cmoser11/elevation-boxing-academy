@@ -1,12 +1,12 @@
 /* ---------------------------------------------------------------------------
-   ABOUT PAGE CONTENT — this is the file to write in.
+   ABOUT PAGE CONTENT. This is the file to write in.
 
    Everything here is plain text. Fill in the empty strings and the page picks
-   it up on refresh. Anything left empty simply does not render, so the page
+   it up on refresh. Anything left empty does not render at all, so the page
    stays presentable while it is half-written.
 
-   Sections are pre-headed around the gym's own framing — build you from the
-   ground up — but rename or delete any of them freely.
+   The section headings follow the gym's own framing about building people from
+   the ground up. Rename or delete any of them freely.
 --------------------------------------------------------------------------- */
 
 window.ABOUT = {
@@ -21,7 +21,7 @@ window.ABOUT = {
       body: [
         "",
       ],
-      hint: "How the gym started, who runs it, what makes it different from a fitness-boxing class.",
+      hint: "How the gym started and who runs it. Worth saying how it differs from a fitness-boxing class.",
     },
     {
       heading: "Who It's For",
@@ -42,7 +42,7 @@ window.ABOUT = {
       body: [
         "",
       ],
-      hint: "What to bring, what to wear, whether gloves are provided, how early to turn up. Someone asked exactly this on Instagram and nobody answered — worth covering here.",
+      hint: "What to bring, what to wear, whether gloves are provided, how early to turn up. Someone asked exactly this on Instagram and got no reply, so it belongs here.",
     },
   ],
 

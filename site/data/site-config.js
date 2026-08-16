@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------------
-   SITE CONFIG — edit this file to change details across every page at once.
-   Anything set to null is simply hidden until you fill it in.
+   SITE CONFIG. Edit this file to change details across every page at once.
+   Anything set to null stays hidden until you fill it in.
 --------------------------------------------------------------------------- */
 
 window.SITE = {
@@ -19,7 +19,7 @@ window.SITE = {
     mapUrl: "https://maps.app.goo.gl/rHKVJ9u1L1oEJhLm7",
   },
 
-  // TODO: fill these in — they're hidden on the site while null.
+  // TODO: fill these in. They stay hidden on the site while null.
   contact: {
     phone: null,   // e.g. "(505) 555-0123"
     email: null,   // e.g. "info@elevationboxingacademy.com"
@@ -37,8 +37,8 @@ window.SITE = {
   },
 
   /* Elevation Boxing Equipment gets its own separate website later.
-     Set this to that URL and the Gear nav item + page CTA will point at it
-     automatically. Leave null and the page stays a "coming soon". */
+     Set this to that URL and the Gear nav item and page button will both point
+     at it. Leave it null and the page stays a "coming soon". */
   gearUrl: null,
 
   nav: [

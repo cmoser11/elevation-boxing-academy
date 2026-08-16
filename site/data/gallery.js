@@ -1,11 +1,11 @@
 /* ---------------------------------------------------------------------------
    GALLERY
    Photos posted by @elevationboxingacademy, pulled from the gym's own
-   Instagram grid on 16 Aug 2026. Tagged and collaborator posts from other
-   accounts were deliberately left out.
+   Instagram grid on 16 Aug 2026. Tagged and collaborator posts belonging to
+   other accounts were left out.
 
    To add a photo: drop the file in assets/img/gallery/ and add a line below.
-   Alt text describes the image for screen readers and for search — keep it
+   Alt text describes the image for screen readers and for search. Keep it
    short and factual.
 --------------------------------------------------------------------------- */
 
