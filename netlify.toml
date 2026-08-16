@@ -23,12 +23,16 @@
 
 # site/ doubles as the repo folder, so a few files in it are internal notes
 # rather than web pages. Netlify uploads the whole directory, so hide them.
+# force = true is required: without it Netlify serves the real file first and
+# these rules never fire.
 [[redirects]]
   from = "/README.md"
   to = "/index.html"
   status = 404
+  force = true
 
 [[redirects]]
   from = "/tools/*"
   to = "/index.html"
   status = 404
+  force = true
