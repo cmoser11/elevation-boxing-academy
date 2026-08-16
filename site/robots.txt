@@ -1,0 +1,4 @@
+# Draft site. The About page is still unwritten, so keep it out of search
+# results for now. Replace the two lines below with "Allow: /" when it is ready.
+User-agent: *
+Disallow: /

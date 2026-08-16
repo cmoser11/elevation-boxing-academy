@@ -1,0 +1,22 @@
+# Netlify deploy config.
+# Static site, so there is no build command: the site/ folder is published as-is.
+
+[build]
+  publish = "site"
+
+# The About page still carries "Write this" placeholders, so keep the draft out
+# of search results. Delete this whole headers block when the site is finished
+# and you want Google to index it.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Long-lived caching for fingerprint-free assets is not safe here, since photos
+# and CSS are replaced in place. Keep it short so edits show up quickly.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
