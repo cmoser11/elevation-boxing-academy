@@ -382,6 +382,61 @@ p:last-child { margin-bottom: 0; }
 .hero--noimg { background:
   radial-gradient(ellipse at 30% 20%, #1d1a15 0%, var(--ink) 62%); }
 
+/* Split hero: copy on the left, photo in a framed panel on the right.
+   Used when the hero image is a group shot whose faces shouldn't sit under
+   the headline, and when the file is too small to run full-bleed cleanly. */
+.hero--split {
+  min-height: 0;
+  display: block;
+  padding-block: clamp(2.75rem, 7vw, 5.5rem);
+  background: radial-gradient(ellipse at 72% 40%, #1b1813 0%, var(--ink) 68%);
+}
+
+.hero--split .hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  padding-block: 0;
+}
+
+.hero--split h1 { max-width: 12ch; }
+
+/* Browsers default <figure> to margin: 1em 40px, which would shrink the photo
+   inside its grid track. */
+.hero__figure { position: relative; margin: 0; }
+
+/* Offset gold rule behind the photo, echoing the brushed frame on their
+   printed graphics. */
+.hero__figure::before {
+  content: "";
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid var(--gold-deep);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+
+.hero__figure img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  filter: contrast(1.04) saturate(0.95);
+}
+
+@media (max-width: 860px) {
+  .hero--split .hero__inner {
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 7vw, 2.75rem);
+  }
+  .hero--split h1 { max-width: none; }
+  .hero__figure::before { inset: 10px -10px -10px 10px; }
+}
+
 .hero__inner { position: relative; z-index: 1; padding-block: clamp(3rem, 8vw, 5rem); }
 
 .hero h1 { margin-bottom: 0.35em; max-width: 15ch; }

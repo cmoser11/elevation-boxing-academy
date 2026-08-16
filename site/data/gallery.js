@@ -10,7 +10,6 @@
 --------------------------------------------------------------------------- */
 
 window.GALLERY = [
-  { src: "assets/img/gallery/eba-00.jpg", alt: "Three members and a coach in the gym with gloves up" },
   { src: "assets/img/gallery/eba-06.jpg", alt: "Two fighters standing together on the training floor" },
   { src: "assets/img/gallery/eba-20.jpg", alt: "A coach walking a student through combinations" },
   { src: "assets/img/gallery/eba-17.jpg", alt: "Coach holding pads while a student works combinations" },
@@ -22,4 +21,5 @@ window.GALLERY = [
   { src: "assets/img/gallery/eba-14.jpg", alt: "Fight night action in the ring" },
   { src: "assets/img/gallery/eba-22.jpg", alt: "Outdoor conditioning session" },
   { src: "assets/img/gallery/eba-23.jpg", alt: "Hill and stair conditioning outside the gym" },
+  { src: "assets/img/gallery/eba-00.jpg", alt: "Two coaches and a fighter with fists raised after a bout" },
 ];
