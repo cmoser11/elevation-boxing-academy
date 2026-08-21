@@ -60,7 +60,9 @@ window.ABOUT = {
          + "from a first-timer learning stance to fighters getting ready for a card. "
          + "He came up training at Fit NHB in Albuquerque. He has worked with "
          + "professional and amateur fighters across boxing, Muay Thai and MMA.",
-      photo: "",
+      /* Drop a headshot at this path and it appears. Until then the card is
+         text-only rather than a broken image. */
+      photo: "assets/img/coach-joe.jpg",
     },
     {
       name: "Amber Brown",
@@ -70,7 +72,7 @@ window.ABOUT = {
          + "Pancrase. In March 2016 she challenged for the Invicta FC atomweight world "
          + "title. She trained at Fit NHB in Albuquerque and has since moved into "
          + "Muay Thai. She coaches all-levels classes and works with the competition team.",
-      photo: "",
+      photo: "assets/img/coach-amber.jpg",
     },
   ],
 };

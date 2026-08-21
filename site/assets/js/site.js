@@ -401,6 +401,12 @@
             "</article>"
           );
         }).join("");
+
+        /* A photo path can be filled in before the file is actually added.
+           Drop the image rather than showing a broken one. */
+        coachMount.querySelectorAll("img").forEach(function (im) {
+          im.addEventListener("error", function () { im.remove(); });
+        });
       }
     }
   }
