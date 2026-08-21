@@ -937,3 +937,49 @@ main { flex: 1 0 auto; }
   .btn:hover, .price-card:hover, .nav__social a:hover { transform: none; }
   .tile:hover img { transform: none; }
 }
+
+/* ------------------------------------------------------- touch targets ---- */
+/* Anything tappable needs roughly 44px of hit area. Several links were well
+   under that: footer links sat at 20px tall and the header social icons at
+   34px. Keyed to coarse pointers as well as width, so it also applies to
+   touchscreens running at desktop widths. */
+
+@media (max-width: 860px), (pointer: coarse) {
+  .nav__social a { width: 44px; height: 44px; }
+  .nav__social svg { width: 18px; height: 18px; }
+
+  .nav-toggle { width: 46px; height: 44px; }
+
+  .brand { padding-block: 0.35rem; }
+
+  /* Padding does the work rather than gap, so the row spacing stays even. */
+  .footer-links { gap: 0; }
+  .footer-links a { display: block; padding-block: 0.7rem; }
+
+  .footer-col address a,
+  .footer-col p a { display: inline-block; padding-block: 0.45rem; }
+
+  .footer-social a { padding: 0.85rem 1.1rem; }
+
+  .hero__meta { gap: 0.35rem 1.5rem; }
+  .hero__meta a { display: inline-block; padding-block: 0.65rem; }
+
+  /* Full-width buttons read better than two stacked half-width ones. */
+  .btn-row .btn { flex: 1 1 100%; }
+  .callout .btn-row { width: 100%; }
+}
+
+/* Lightbox controls are hard to hit accurately on a phone. */
+@media (max-width: 640px) {
+  .lightbox__btn { width: 52px; height: 52px; }
+  .lightbox__prev { left: 0.4rem; }
+  .lightbox__next { right: 0.4rem; }
+  .lightbox__img { max-height: 72vh; }
+}
+
+/* Two photos per row on phones. The auto-fill minmax above resolves to a
+   single 335px column at 375px wide, which turned the gallery into ~4000px
+   of vertical scrolling. */
+@media (max-width: 640px) {
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

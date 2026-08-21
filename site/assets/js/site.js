@@ -239,7 +239,7 @@
     box.setAttribute("aria-label", "Photo viewer");
     box.hidden = true;
     box.innerHTML =
-      '<img class="lightbox__img" src="" alt="">' +
+      '<img class="lightbox__img" alt="">' +
       '<button class="lightbox__btn lightbox__close" type="button" aria-label="Close viewer">&times;</button>' +
       '<button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous photo">&#8249;</button>' +
       '<button class="lightbox__btn lightbox__next" type="button" aria-label="Next photo">&#8250;</button>' +
