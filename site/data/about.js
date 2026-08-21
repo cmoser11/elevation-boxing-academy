@@ -70,8 +70,7 @@ window.ABOUT = {
       bio: "Amber fought professionally at atomweight for more than a decade, "
          + "competing for Invicta FC, Legacy Fighting Alliance, King of the Cage and "
          + "Pancrase. In March 2016 she challenged for the Invicta FC atomweight world "
-         + "title. She trained at Fit NHB in Albuquerque and has since moved into "
-         + "Muay Thai. She coaches all-levels classes and works with the competition team.",
+         + "title. She coaches all-levels classes and works with the competition team.",
       photo: "assets/img/coach-amber.jpg",
     },
   ],
