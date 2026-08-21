@@ -10,7 +10,6 @@
 --------------------------------------------------------------------------- */
 
 window.GALLERY = [
-  { src: "assets/img/gallery/eba-06.jpg", alt: "Two fighters standing together on the training floor" },
   { src: "assets/img/gallery/eba-20.jpg", alt: "A coach walking a student through combinations" },
   { src: "assets/img/gallery/eba-17.jpg", alt: "Coach holding pads while a student works combinations" },
   { src: "assets/img/gallery/eba-19.jpg", alt: "The training floor, with heavy bags and the ring" },
